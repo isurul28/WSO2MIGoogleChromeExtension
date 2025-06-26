@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "API Viewer Side Panel",
+  "version": "1.0",
+  "description": "A Chrome extension to display API response in a side panel.",
+  "permissions": [
+    "sidePanel"
+  ],
+  "host_permissions": [
+    "http://localhost:9206/"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "side_panel": {
+    "default_path": "sidepanel.html"
+  },
+  "action": {
+    "default_title": "Open API Viewer"
+  }
+}
