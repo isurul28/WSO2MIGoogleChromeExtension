@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     try {
         // --- Step 1: Call the login API to get an access token ---
         const loginUrl = 'http://localhost:9206/management/login';
-        // Base64 encoded 'c_isurt:Welcome@062024'
+        // Base64 encoded
         const basicAuthHeader = 'Basic xxxx==';
 
         const loginResponse = await fetch(loginUrl, {
